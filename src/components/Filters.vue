@@ -20,6 +20,8 @@
           :options="[
             { label: 'Name [A-Z]', code: 'name-asc' },
             { label: 'Name [Z-A]', code: 'name-desc' },
+            { label: 'Email [A-Z]', code: 'email-asc' },
+            { label: 'Email [Z-A]', code: 'email-desc' },
           ]"
         ></v-select>
       </div>

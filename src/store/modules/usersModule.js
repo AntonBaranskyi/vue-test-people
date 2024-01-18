@@ -42,6 +42,10 @@ export const usersModule = {
               return a.first_name.localeCompare(b.first_name);
             case 'name-desc':
               return b.first_name.localeCompare(a.first_name);
+            case 'email-asc':
+              return a.email.localeCompare(b.email);
+            case 'email-desc':
+              return b.email.localeCompare(a.email);
           }
         });
       }

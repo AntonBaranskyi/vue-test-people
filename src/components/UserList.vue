@@ -59,11 +59,14 @@ export default {
 }
 
 .list-enter-active,
-.list-leave-active {
+.list-leave-active,
+.list-move {
   transition: all 0.5s ease;
 }
+
 .list-enter-from,
-.list-leave-to {
+.list-leave-to,
+.list-move-to {
   opacity: 0;
   transform: translateX(30px);
 }
