@@ -66,7 +66,13 @@
         >
           Exit
         </button>
-        <button class="btn user-details__btn" type="submit">Save</button>
+        <button
+          class="btn user-details__btn"
+          type="submit"
+          :disabled="hasErrors"
+        >
+          Save
+        </button>
       </div>
     </form>
   </div>
@@ -143,6 +149,10 @@ export default {
     ...mapState('common', {
       currentUser: (state) => state.currentUser,
     }),
+
+    hasErrors() {
+      return !!(this.errors.phoneNumber || this.errors.adress);
+    },
   },
 };
 </script>
