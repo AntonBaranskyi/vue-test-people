@@ -8,7 +8,14 @@
       />
     </div>
     <TransitionGroup name="list" v-else>
-      <UserCard :user="user" :key="user._id" v-for="user in searchedAndSortedUsers" />
+      <div v-if="searchedAndSortedUsers.length === 0">
+        <p>No users found.</p>
+      </div>
+      <UserCard
+        :user="user"
+        :key="user._id"
+        v-for="user in searchedAndSortedUsers"
+      />
     </TransitionGroup>
   </div>
 </template>
