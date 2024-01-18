@@ -69,7 +69,9 @@
         <button
           class="btn user-details__btn"
           type="submit"
-          :disabled="hasErrors"
+          :disabled="
+            hasErrors || !currentUser.adress || !currentUser.phoneNumber
+          "
         >
           Save
         </button>
