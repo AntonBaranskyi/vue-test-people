@@ -71,6 +71,7 @@
           type="submit"
           :disabled="
             hasErrors || !currentUser.adress || !currentUser.phoneNumber
+          
           "
         >
           Save
