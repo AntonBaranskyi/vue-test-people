@@ -9,8 +9,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^1.6.5",
+    "jenesius-vue-modal": "^1.10.3",
     "sass": "^1.69.7",
-    "vue": "^3.3.11"
+    "vue": "^3.4.14",
+    "vue-phone-number-input": "^1.12.13",
+    "vue-select": "^4.0.0-beta.6",
+    "vue-spinner": "^1.0.4",
+    "vuex": "^4.1.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.5.2",
